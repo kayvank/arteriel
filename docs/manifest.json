@@ -1,0 +1,63 @@
+{
+  "header": {
+    "time": {
+      "epoc": 123456789,
+      "local": "Tue 16 Apr 2019 07:35:54 AM PDT"
+    },
+    "version": "1.0-alpha",
+    "entity": "arteriel"
+  },
+  "asset": {
+    "identification": {
+      "id": "asset-123",
+      "arteriel_id": "arteriel_id-123",
+      "type": "painting",
+      "name": "asset_name",
+      "uri": "http://acme.com/asset/asset-123"
+    },
+    "production_usage": {
+      "isPaper": true,
+      "isCanvas": true,
+      "isFabric": true,
+      "isHardGoods": true
+    },
+    "policies": [
+      {
+        "entities": [
+          {
+            "type": "museum",
+            "name": "museum-123",
+            "arterielId": "id-m-123",
+              "role":["collectionHolder"],
+            "paymentInfo": [
+              {
+                "wallets": [
+                  {
+                    "name": "wallet_friendly_name",
+                    "key": "some-key",
+                    "otherInfo": "TBD"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "gallery",
+            "name": "gallery-123",
+            "arterielId": "id-g-123",
+              "role":["referral"],
+            "paymentInfo": [
+              {
+                "wallet": {
+                  "name": "wallet_friendly_name",
+                  "key": "some-key",
+                  "otherInfo": "TBD"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
